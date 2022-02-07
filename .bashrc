@@ -55,7 +55,7 @@ alias rply="pkill -USR1 polybar"                      #reload polybar
 # casual aliases
 alias  p="python3"                                          # Python
 alias cam="mpv av://v4l2:/dev/video0"			                  # CAMERA PREVIEW IN MPV
-alias t="python3 /home/$USER/Scripts/classlinks_dmenu_vesion.py" #classes links dmenu
+alias t="python3 /home/$USER/Scripts/classlinks.py" #classes links dmenu
 alias c="clear"                                             # Clear terminal 
 
 
