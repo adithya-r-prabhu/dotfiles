@@ -1,0 +1,66 @@
+#!/bin/sh
+
+# & is equal to run in background
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+
+bspc monitor -d  I II III IV V VI VII VIII IX X
+
+
+#make bspwm launch the workspace  III on startup or it move there instantly 
+bspc desktop III --focus &
+
+bspc config border_width         2
+bspc config window_gap          6
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config pointer_follows_focus false
+bspc config focus_follows_pointer true
+
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+# bspc rule -a telegram-desktop desktop='^2'
+# bspc rule -a gnome-calculator state=floating
+# bspc rule -a Yad state=floating
+# bspc rule -a Kupfer.py focus=on
+# bspc rule -a Screenkey manage=off
+bspc rule -a flameshot state=floating
+bspc rule -a gnome-calculator state=floating
+bspc rule -a telegram-desktop desktop='^4' follow=on
+
+# Border
+bspc config focused_border_color        "#6c71c4"
+bspc config normal_border_color         "#073642"
+bspc config active_border_color         "#073642"
+
+
+
+# Autostart
+#
+# Set display from arandr saved script
+sh ~/.screenlayout/monitor.sh &
+# Bar
+killall polybar
+sh ~/.config/polybar/launch.sh &
+# Notifications
+killall dunst
+/usr/bin/dunst &
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# Wallpaper
+killall nitrogen
+nitrogen --restore &
+# Dex
+dex -a -s /etc/xdg/autostart/:~/.config/autostart/  &
+# Picom
+killall picom
+picom -CGb &
+# bluelight filter using redshift
+redshift -O 4900
+# Network Applet
+killall nm-applet
+nm-applet --indicator &
+# Cursor
+xsetroot -cursor_name left_ptr &
+
