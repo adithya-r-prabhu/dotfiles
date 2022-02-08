@@ -11,7 +11,7 @@ bspc monitor -d  I II III IV V VI VII VIII IX X
 bspc desktop III --focus &
 
 bspc config border_width         2
-bspc config window_gap          6
+bspc config window_gap          12
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
@@ -54,10 +54,10 @@ nitrogen --restore &
 # Dex
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/  &
 # Picom
-killall picom
-picom -CGb &
+# killall picom
+# picom -CGb &
 # bluelight filter using redshift
-redshift -O 4900
+redshift -O 4000
 # Network Applet
 killall nm-applet
 nm-applet --indicator &
