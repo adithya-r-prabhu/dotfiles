@@ -38,7 +38,7 @@
 - [Volume changer in terminal](#Volume-changer-in-terminal)
 - [Edge stable on arch](#Edge-stable-on-arch)
 - [~/cache in memory and not in ssd](#~/cache-in-memory-and-not-in-ssd)
-
+- [remove orphan dependencies arch linux](#remove-orphan-dependencies-arch-linux)
 
 
 ## Custom Terminal prompt 
@@ -204,3 +204,8 @@ makepkg -si
 tmpfs /home/[user]/.cache tmpfs nodev,nosuid,size=2G 0 0
 ```
 #### add this to ``` /etc/fstab``` and comment the existing one
+
+## remove orphan dependencies arch linux
+~~~
+pacman -R $(pacman -Qdtq) 
+~~~
