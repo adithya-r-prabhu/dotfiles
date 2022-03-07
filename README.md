@@ -1,6 +1,8 @@
 <!-- # **My Linux configuration/ Dotfiles** -->
 <!-- ![dotfiles](RepoFiles/Header.png) -->
 
+<img src="https://user-images.githubusercontent.com/83577193/151350521-8ada51ca-da37-4ce7-9619-6135d77347f5.png" alt="Header" style="width:100%;"/>
+
  ## environment variables stored in 
 ``` 
  ~/.bashrc
@@ -8,8 +10,6 @@
  /etc/environment
  ```
  
-<img src="https://user-images.githubusercontent.com/83577193/151350521-8ada51ca-da37-4ce7-9619-6135d77347f5.png" alt="Header" style="width:100%;"/>
-
 >**This Readme is contains My dot files and also**
 
 
@@ -37,7 +37,7 @@
 - [Fix X shaped cursor bspwm](#Fix-X-shaped-cursor-bspwm)
 - [Volume changer in terminal](#Volume-changer-in-terminal)
 - [Edge stable on arch](#Edge-stable-on-arch)
-- [System monitor](#System-monitor)
+- [~/cache in memory and not in ssd](#~/cache-in-memory-and-not-in-ssd)
 
 
 
