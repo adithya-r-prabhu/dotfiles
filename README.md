@@ -28,7 +28,8 @@
 - [Audio visulizer in terminal](#Audio-visulizer-in-terminal-cava)
 - [Fix X shaped cursor bspwm](#Fix-X-shaped-cursor-bspwm)
 - [Volume changer in terminal](#Volume-changer-in-terminal)
-
+- [Edge stable on arch](#Edge-stable-on-arch)
+- [System monitor](#System-monitor)
 
 
 
@@ -169,3 +170,22 @@ https://github.com/scopatz/nanorc
 ![image](https://user-images.githubusercontent.com/83577193/151826717-f4cbec3e-c36f-4008-a555-2f6519d2be72.png)
 
 ```pulsemixer```
+
+## Edge stable on arch
+
+use 
+
+https://github.com/zicstardust/microsoft-egde-stable-bin-aur
+
+```
+git clone https://github.com/zicstardust/microsoft-egde-stable-bin-aur.git
+
+cd microsoft-egde-stable-bin-aur
+
+makepkg -si
+```
+
+## System monitor
+![image](https://user-images.githubusercontent.com/83577193/156818794-ba50222f-32ab-46e6-88a6-4a371f497357.png)
+
+```yay -S system-monitoring-center```
