@@ -1,5 +1,13 @@
 <!-- # **My Linux configuration/ Dotfiles** -->
 <!-- ![dotfiles](RepoFiles/Header.png) -->
+
+ ## environment variables stored in 
+``` 
+ ~/.bashrc
+ 
+ /etc/environment
+ ```
+ 
 <img src="https://user-images.githubusercontent.com/83577193/151350521-8ada51ca-da37-4ce7-9619-6135d77347f5.png" alt="Header" style="width:100%;"/>
 
 >**This Readme is contains My dot files and also**
@@ -189,3 +197,10 @@ makepkg -si
 ![image](https://user-images.githubusercontent.com/83577193/156818794-ba50222f-32ab-46e6-88a6-4a371f497357.png)
 
 ```yay -S system-monitoring-center```
+
+## ~/cache in memory and not in ssd
+![image](https://user-images.githubusercontent.com/83577193/157086332-3616d936-e00a-42e5-b714-061416ab05a8.png)
+```
+tmpfs /home/[user]/.cache tmpfs nodev,nosuid,size=2G 0 0
+```
+#### add this to ``` /etc/fstab``` and comment the existing one
