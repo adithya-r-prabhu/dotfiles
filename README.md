@@ -39,7 +39,7 @@
 - [Edge stable on arch](#Edge-stable-on-arch)
 - [~/cache in memory and not in ssd](#~/cache-in-memory-and-not-in-ssd)
 - [remove orphan dependencies arch linux](#remove-orphan-dependencies-arch-linux)
-
+- [Customize Grub](#Customize-Grub)
 
 ## Custom Terminal prompt 
 ### Synth-shell prompt
@@ -209,3 +209,20 @@ tmpfs /home/[user]/.cache tmpfs nodev,nosuid,size=2G 0 0
 ~~~
 pacman -R $(pacman -Qdtq) 
 ~~~
+source:
+https://averagelinuxuser.com/clean-arch-linux/
+
+## Customize Grub
+
+~~~
+git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
+cd Top-5-Bootloader-Themes
+sudo ./install.sh
+~~~
+source:
+https://www.christitus.com/bootloader-themes/
+https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
+
+#### use grub-customizer to change name of listing
+source:
+https://archlinux.org/packages/community/x86_64/grub-customizer/
