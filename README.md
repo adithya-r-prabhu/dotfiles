@@ -45,7 +45,7 @@
 ### Synth-shell prompt
 ![image](https://user-images.githubusercontent.com/83577193/148920101-29875d18-fcf2-406a-937e-243b9c2fc034.png)
 ```
- wget https://raw.githubusercontent.com/ChrisTitusTech/scripts/master/fancy-bash-promt.sh -O .bashrc
+ wget https://raw.githubusercontent.com/mccyclone/scripts/master/fancy-bash-promt.sh -O .bashrc
 ```
 #### Reference
 https://github.com/andresgongora/synth-shell
